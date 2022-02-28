@@ -5,6 +5,14 @@
 @import "_variables";
 // bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 .form-control {
     font-size: 13px;
     padding: 10px;
@@ -43,5 +51,3 @@
 .text-green {
     color: $light-green;
 }
-
-@import "_responsive";

@@ -213,16 +213,25 @@
 
 // pc and tablets
 @media (min-width: 768px) {
+    .padder {
+        margin: 0 1rem;
+    }
+    .add-card-btn{
+        text-decoration: none;
+        color: #fff;
+    }
     .card-carosel {
         position: relative;
         top: 0;
     }
+
    .panel-fixed-mobile {
        position: relative;
        background-color: #fff;
        color: black;
        height: auto;
    }
+
    .scroll-content-mobile{
         z-index: 10;
         margin-top: 0;
