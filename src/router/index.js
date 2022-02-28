@@ -32,11 +32,7 @@ const routes = [
       {
         path: '/credit',
         component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
-      },
-      {
-        path: '/profile',
-        component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
-      },
+      }
     ]
   }
 ]

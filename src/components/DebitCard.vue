@@ -50,14 +50,6 @@ export default {
     props: ['card', 'isActive'],
     computed: {
         cardNumber(){
-            /* let str = '';
-            for(let i=0; i<= this.card.card_number.length-4; i++){
-                str += '<span class="dot"></span>';
-                if(i % 4 == 0){
-                    str += '<span class="dot-gap"></span>';
-                }
-            } */
-            //str += this.card.card_number.substring(12);
             return this.card.card_number.substring(12);
         }
     },

@@ -24,13 +24,12 @@
 
 <script>
 import moment from "moment";
+import { mapState } from 'vuex'
 export default {
     name: "TransactionList",
     props: ['transactions'],
     computed: {
-        currency(){
-            return 'S$';
-        }
+        ...mapState(['currency'])
     },
     filters: {
         formatMoney(str, currency, type){

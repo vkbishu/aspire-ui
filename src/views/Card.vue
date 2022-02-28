@@ -198,6 +198,7 @@
 <script>
 import CardService from "@/service/card-service";
 import moment from "moment";
+import { mapState } from 'vuex'
 import {
   VsaList,
   VsaItem,
@@ -223,13 +224,14 @@ export default {
         TransactionList,
         Logo
     },
+    computed: {
+        ...mapState([
+            'currency',
+            'balance',
+        ]),
+    },
     data(){
         return {
-            // global
-            balance: '',
-            // global
-            currency: '',
-
             accordion_key: Date.now(),
             plugins: [new Pagination({ type: 'bullet'})],
             active_card: null,
@@ -237,14 +239,12 @@ export default {
                 name: '',
                 name_error: null
             },
-            cards: [],
+            cards: []
         }
     },
     created(){
         CardService.getCards()
         .then(res => {
-            this.balance = res.data.data.balance;
-            this.currency = res.data.data.currency;
             this.cards = res.data.data.cards;
             this.active_card = this.cards[0];
         });

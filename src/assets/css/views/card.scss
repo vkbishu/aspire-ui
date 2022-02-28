@@ -112,6 +112,7 @@
 .card-action {
     background-color: #EDF3FF;
     border-radius: 40px 40px 0px 0px;
+    cursor: pointer;
     .card-option {
         width: 60px;
     }
@@ -214,7 +215,7 @@
 // pc and tablets
 @media (min-width: 768px) {
     .padder {
-        margin: 0 1rem;
+        margin: 0 1.5rem;
     }
     .add-card-btn{
         text-decoration: none;
@@ -253,10 +254,21 @@
        box-shadow: 0px 2px 12px #00000014;
        border: 1px solid #FCFCFC;
    }
+
+   .card-action.pc {
+       margin-right: 1.5rem;
+   }
+}
+
+@media (min-width: 992px){
+    .card-action.pc {
+        margin-right: 0rem;
+    }
 }
 
 @media (min-width: 1200px){
     .padder {
-        padding: 3rem !important;
+        padding: 1.8rem !important;
     }
+    
 }

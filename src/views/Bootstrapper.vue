@@ -7,7 +7,14 @@
 <script>
 // Application Bootstrapper
 // Load all global configuration here
+import {mapActions} from "vuex";
 export default {
   name: 'Bootstrapper',
+  created(){
+    this.getAppState();
+  },
+  methods: {
+    ...mapActions(['getAppState'])
+  }
 }
 </script>
