@@ -1,7 +1,11 @@
 # Aspire UI
 
 ## Project setup
+
+### Clone and install depencencies
 ```
+git clone https://github.com/vkbishu/aspire-ui.git
+cd aspire-ui
 npm install
 ```
 
