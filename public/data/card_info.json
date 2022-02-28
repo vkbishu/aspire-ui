@@ -1,0 +1,99 @@
+{
+    "data": {
+        "balance": "3,000",
+        "currency": "S$",
+        "cards": [
+            {
+                "id": 1,
+                "name": "Mark Henry",
+                "card_number": "1111254785236547",
+                "expire": "2021-11-25",
+                "freeze": false,
+                "recent_transactions": [
+                    {
+                        "id": 1,
+                        "name": "Hamleys",
+                        "date": "2021-05-20",
+                        "amount": 150,
+                        "txn_type": "refund",
+                        "txn_for": "file-storage"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Hamleys",
+                        "date": "2021-05-20",
+                        "amount": 150,
+                        "txn_type": "charge",
+                        "txn_for": "flight"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Hamleys",
+                        "date": "2021-05-20",
+                        "amount": 150,
+                        "txn_type": "charge",
+                        "txn_for": "megaphone"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Hamleys",
+                        "date": "2021-05-20",
+                        "amount": 150,
+                        "txn_type": "charge",
+                        "txn_for": "file-storage"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Tony",
+                "card_number": "2222254785232541",
+                "expire": "2021-08-08",
+                "freeze": false,
+                "recent_transactions": [
+                    {
+                        "id": 5,
+                        "name": "Hamleys",
+                        "date": "2021-08-20",
+                        "amount": 150,
+                        "txn_type": "refund",
+                        "txn_for": "file-storage"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Hamleys",
+                        "date": "2021-08-20",
+                        "amount": 200,
+                        "txn_type": "charge",
+                        "txn_for": "file-storage"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Hamleys",
+                        "date": "2021-08-20",
+                        "amount": 250,
+                        "txn_type": "charge",
+                        "txn_for": "flight"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Jack Sparrow",
+                "card_number": "2222254785232145",
+                "expire": "2020-12-08",
+                "freeze": false,
+                "recent_transactions": [
+                    {
+                        "id": 7,
+                        "name": "Hamleys",
+                        "date": "2021-08-20",
+                        "amount": 250,
+                        "txn_type": "charge",
+                        "txn_for": "flight"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+/* import the necessary Bootstrap files */
+// Required
+//@import "~bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import "_variables";
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "views/_card";
+@import "_responsive";
+.form-control {
+    font-size: 13px;
+    padding: 10px;
+    height: auto;
+}
+
+.white_box {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 10%);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.border_box [class^="col-"] {
+    padding: 20px;
+    box-shadow: 1px 0 0 0 #ced4da, 0 1px 0 0 #ced4da, 1px 1px 0 0 #ced4da, 1px 0 0 0 #ced4da inset, 0 1px 0 0 #ced4da inset;
+}

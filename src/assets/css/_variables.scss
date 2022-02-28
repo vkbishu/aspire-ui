@@ -1,0 +1,28 @@
+$font-family-base:'Open Sans', sans-serif !default;
+
+// colors
+$light-green:       #01D167;
+$blue:              #0C365A;
+$grey:              #AAAAAA;
+
+$primary:       $light-green;
+$secondary:     $blue;
+
+// text
+.fw-500 {
+    font-weight: 500 !important;;
+}
+.fw-600 {
+    font-weight: 600 !important;;
+}
+.fw-700 {
+    font-weight: 700 !important;;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+.text-green {
+    color: $light-green;
+}
