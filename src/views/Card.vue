@@ -348,3 +348,12 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+@import '~vue-simple-accordion/dist/vue-simple-accordion.css';
+@import "~@egjs/vue-flicking/dist/flicking.css";
+@import "~@egjs/flicking-plugins/dist/pagination.css";
+@import "@/assets/css/_variables";
+@import "@/assets/css/views/card";
+</style>
+

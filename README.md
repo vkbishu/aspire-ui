@@ -1,4 +1,4 @@
-# ont-platinum-ui
+# Aspire UI
 
 ## Project setup
 ```

@@ -83,81 +83,14 @@
 }
 // accordian end
 
-//txn-list
-
 .view-all{
     background-color: #EDFFF5;
     border: 1px solid #DDFFEC;
-    color: $light-green;
+    color: #01D167;
     text-align: center;
     padding: 1rem;
     margin: 0 -1rem -1rem;
 }
-.txn-type {
-    font-size: 0.85rem;
-    color: #325BAF;
-}
-.business-icon{
-    display: inline-block;
-    width: 24px;
-    height: 20px;
-    background-color: #325BAF;
-    border-radius: 15px;
-    margin-right: 8px;
-    img {
-        position: relative;
-        left: 7px;
-       
-    }
-}
-
-.txn-list {
-    padding: 0;
-    margin: 0;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    li {
-        border-bottom: 1px solid #F5F5F5;
-        padding-bottom: 1rem;
-        &:last-child {
-            border-bottom: 0;
-        }
-    }
-    .icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-color: #009DFF1A;
-        margin-right: 1rem;
-        &.flight {
-            background-image: url('~@/assets/icons/flights.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #00D6B51A;
-        }
-        &.file-storage {
-            background-image: url('~@/assets/icons/file-storage-1.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &.megaphone {
-            background-image: url('~@/assets/icons/megaphone.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #F251951A;
-        }
-    }
-
-    .txn-info {
-        flex-grow: 1;
-        .date {
-            color: #AAAAAA;
-            font-size: 0.95rem;
-            margin-top: 0.2rem;
-        }
-    }
-}
-//txn-list end
 
 .panel-fixed-mobile {
     position: fixed;

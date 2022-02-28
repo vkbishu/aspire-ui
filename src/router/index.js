@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Bootstrapper from '../views/Bootstrapper.vue'
+import Bootstrapper from '../views/Bootstrapper'
 
 Vue.use(VueRouter)
 
