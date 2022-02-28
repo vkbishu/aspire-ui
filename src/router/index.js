@@ -11,6 +11,10 @@ const routes = [
     children: [
       {
         path: '',
+        redirect: '/home'
+      },
+      {
+        path: '/home',
         component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
       },
       {
@@ -18,11 +22,19 @@ const routes = [
         component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
       },
       {
-        path: 'profile',
+        path: '/profile',
         component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
       },
       {
-        path: 'payment',
+        path: '/payments',
+        component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
+      },
+      {
+        path: '/credit',
+        component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
+      },
+      {
+        path: '/profile',
         component: () => import(/* webpackChunkName: "card" */ '../views/Card.vue')
       },
     ]

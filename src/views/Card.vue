@@ -28,7 +28,7 @@
 
         <div class="box padder">
             <div class="row mob">
-                <div class="col-lg-12 col-xl-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="ps-4 card-carosel" v-if="cards.length > 0">
                         <!-- card carosel -->
                         <Flicking ref="flicking" 
@@ -37,7 +37,7 @@
                                 <DebitCard v-for="card of cards" :key="card.id" :card="card" :is-active="card.id == active_card.id"/>
                                 <div slot="viewport" class="flicking-pagination"></div>
                         </Flicking>
-                        <div  v-if="active_card" class="d-none d-lg-block mt-3">
+                        <div  v-if="active_card" class="d-none d-md-block mt-3">
                             <div class="card-action pc text-center d-flex align-items-center justify-content-around pt-4 pb-4">
                                 <div class="card-option" @click.prevent="unFreezeCard" v-if="active_card.freeze">
                                     <div class="icon">
@@ -80,9 +80,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-12 col-xl-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="scroll-content-mobile" v-if="active_card">
-                        <div class="d-block d-lg-none">
+                        <div class="d-block d-md-none">
                         <div class="card-action text-center d-flex align-items-center justify-content-around pt-4 pb-4">
                             <div class="card-option" @click.prevent="unFreezeCard" v-if="active_card.freeze">
                                 <div class="icon">

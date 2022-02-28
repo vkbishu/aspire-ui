@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper layout-tab">
-    <side-bar @toggle-menu="onToggleCollapse" :menu="menu" ref="sidebar"></side-bar>
+    <side-bar :menu="menu" ref="sidebar"></side-bar>
     <main class="main" :class="{'collapsed': isCollapsed}">
         <div class="container">
             <slot></slot>
@@ -12,30 +12,30 @@
                 icon="Logo-1.svg"
                 active-icon="Logo.svg"
                 label="Home"
-                :is-active="false"
+                href="/home"
             />
             <IconMenu
                 icon="pay.svg"
                 active-icon="pay.svg"
                 label="Cards"
-                :is-active="true"
+                href="/cards"
             />
                 <IconMenu 
                 icon="77cfcfe5525d392a91457d5e35b0352c.svg"
                 label="Payments"
-                :is-active="false"
+                href="/payments"
             />
             <IconMenu 
                 icon="Credit.svg"
                 label="Credit"
                 active-icon="Credit.svg"
-                :is-active="false"
+                href="/credit"
             />
             <IconMenu 
                 icon="user.svg"
                 label="Profile"
                 active-icon="user-1.svg"
-                :is-active="false"
+                href="/profile"
             />
         </div>
     </div>
@@ -60,16 +60,6 @@ export default {
     computed: {
         ...mapState(['menu']),
     },
-    methods: {
-        onToggleCollapse(collapsed) {
-            // add collapsed class to .main 
-            // add a transition effect on .main class when coll
-            this.isCollapsed = collapsed;
-        },
-        toggleSidebar(){
-           this.$refs.sidebar.menuToggle();
-        }
-    }
 }
 </script>
 
@@ -113,7 +103,7 @@ export default {
 }
 
 // pc and tablets
-@media (min-width: 1200px) { 
+@media (min-width: 768px) { 
     .footer {
         display: none;
     }

@@ -1,23 +1,20 @@
 <template>
-    <div class="tab-menu-item" :class="[isActive ? getActiveClass : '', display && display == 'inline'? 'inline': '']">
+    <router-link :to="href" class="tab-menu-item" :class="[display && display == 'inline' ? 'menu-item inline': '']">
         <div class="icon">
             <img :src="require('@/assets/icons/'+icon)" alt="" class="default">
             <img :src="require('@/assets/icons/'+getActiveIcon)" alt="" class="active">
         </div>
         <div class="text" :style="getStyle">{{label}}</div>
-    </div>
+    </router-link>
 </template>
 
 <script>
 export default {
     name: "IconMenu",
-    props: ['icon', 'label', 'display', 'activeIcon', 'isActive', 'iconSize', 'activeClass', 'fontSize'],
+    props: ['icon', 'label', 'display', 'activeIcon', 'iconSize', 'fontSize', 'href'],
     computed: {
         getActiveIcon(){
             return this.activeIcon ? this.activeIcon : this.icon;
-        },
-        getActiveClass(){
-            return this.activeClass ? this.activeClass + ' active' : 'active';
         },
         getStyle(){
             return  {
@@ -32,6 +29,7 @@ export default {
 @import "@/assets/css/_variables";
 .tab-menu-item {
     cursor: pointer;
+    text-decoration: none;
     .icon {
         img {
             width: 24px;
@@ -51,7 +49,7 @@ export default {
         color: #DDDDDD;
     }
 
-    &.active {
+    &.active,&.router-link-active {
         img {
             &.active {
                 display: inline-block;;
@@ -68,10 +66,17 @@ export default {
     &.inline {
         display: flex;
         align-items: center;
-
         .icon {
             margin-right: 1rem;
         }
     }
 }
+
+.menu-item {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
 </style>
