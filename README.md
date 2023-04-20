@@ -1,5 +1,7 @@
 # Aspire UI
 
+Aspire UI
+
 ## Project setup
 
 ### Clone and install depencencies
