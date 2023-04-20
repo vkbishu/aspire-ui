@@ -1,4 +1,4 @@
-# Aspire UI - (Frontend)
+# Aspire UI
 
 ## Project setup
 
